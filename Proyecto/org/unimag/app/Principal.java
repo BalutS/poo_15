@@ -1,29 +1,21 @@
-
 package org.unimag.app;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import org.unimag.controlador.SalidaControlador;
-import org.unimag.vista.gestor.VistaAdmin;
+import org.unimag.vista.gestor.VistaGestor;
 
 public class Principal extends Application{
     
-    private VistaAdmin vistaAdmin;
+    private VistaGestor vistaGestor;
     public static void main(String[] args) {
         launch();
     }
 
     @Override
     public void start(Stage stage) throws Exception {
-        vistaAdmin = new VistaAdmin(stage);
-        stage.setTitle("dios mio que sirva");
-        
-        vistaAdmin.habilitarXCerrar(()->{
-            SalidaControlador.verificar(stage);
-        });
-        
+        vistaGestor = new VistaGestor(stage);
+        stage.setTitle("Gestor de Biblioteca");
         
         stage.show();
     }
 }
-

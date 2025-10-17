@@ -10,6 +10,13 @@ public class AutorDto {
     public AutorDto() {
     }
 
+    public AutorDto(Integer idAutor, String nombreAutor, Boolean generoAutor, Short cantidadLibrosAutor) {
+        this.idAutor = idAutor;
+        this.nombreAutor = nombreAutor;
+        this.generoAutor = generoAutor;
+        this.cantidadLibrosAutor = cantidadLibrosAutor;
+    }
+
     public Integer getIdAutor() {
         return idAutor;
     }
@@ -41,5 +48,9 @@ public class AutorDto {
     public void setCantidadLibrosAutor(Short cantidadLibrosAutor) {
         this.cantidadLibrosAutor = cantidadLibrosAutor;
     }
-}
 
+    @Override
+    public String toString() {
+        return nombreAutor;
+    }
+}

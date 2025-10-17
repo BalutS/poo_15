@@ -1,13 +1,23 @@
-
 package org.unimag.dto;
 
-
 public class EditorialDto {
+
     private Integer idEditorial;
     private String nombreEditorial;
     private String PaisEditorial;
     private Short formatoEditorial;
     private Short cantidadLibrosEditorial;
+
+    public EditorialDto() {
+    }
+
+    public EditorialDto(Integer idEditorial, String nombreEditorial, String PaisEditorial, Short formatoEditorial, Short cantidadLibrosEditorial) {
+        this.idEditorial = idEditorial;
+        this.nombreEditorial = nombreEditorial;
+        this.PaisEditorial = PaisEditorial;
+        this.formatoEditorial = formatoEditorial;
+        this.cantidadLibrosEditorial = cantidadLibrosEditorial;
+    }
 
     public Integer getIdEditorial() {
         return idEditorial;
@@ -49,9 +59,8 @@ public class EditorialDto {
         this.cantidadLibrosEditorial = cantidadLibrosEditorial;
     }
 
-    public EditorialDto() {
+    @Override
+    public String toString() {
+        return nombreEditorial;
     }
-
-    
 }
-

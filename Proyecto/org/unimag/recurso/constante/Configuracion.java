@@ -6,22 +6,19 @@ import javafx.stage.Screen;
 
 public class Configuracion {
 
-    public static final int ALTO_APP = (int) (Screen.getPrimary().getBounds().getHeight() * 0.70);
-    public static final int ANCHO_APP = (int) (Screen.getPrimary().getBounds().getWidth() * 0.80);
+    public static final int ALTO_APP = (int) (Screen.getPrimary().getBounds().getHeight() * 0.85);
+    public static final int ANCHO_APP = (int) (Screen.getPrimary().getBounds().getWidth() * 0.70);
 
     private static final double CABECERA_ALTO_POCERTANJE = 0.1;
     public static final double ALTO_CABECERA = CABECERA_ALTO_POCERTANJE * ALTO_APP;
-    
-    
-    public static final String BLANCO = "#ffffff";
-    public static final String GRIS_CLARO = "#b7b7b7";
-    public static final String ROJO = "#d61c1c"; 
+
     public static final String AZUL_MARINO = "#2fddf7";
     public static final String AZUL_CLARO = "#2faef7";
     public static final String AZUL_BRILLANTE = "#41b9e0";
     public static final String AZUL_MEDIO = "#2b768f";
     public static final String CABECERA_ESTILO_FONDO = String.format(
-            "-fx-background-color: %s;", ROJO);
+            "-fx-background-color: linear-gradient(%s,%s,%s,%s);",
+            AZUL_MARINO,AZUL_CLARO,AZUL_BRILLANTE,AZUL_MEDIO);
     
 
     public static final double MARCO_ALTO_PORCENTAJE = 0.6;
@@ -39,4 +36,3 @@ public class Configuracion {
     };
 
 }
-

@@ -1,15 +1,27 @@
 package org.unimag.dto;
 
+import org.unimag.modelo.Autor;
+import org.unimag.modelo.Editorial;
+
 public class LibroDto {
 
     private Integer idLibro;
     private String nombreLibro;
     private Double precioLibro;
     private Short anioLibro;
-    private EditorialDto idEditorial;
-    private AutorDto idAutor;
+    private Editorial idEditorial;
+    private Autor idAutor;
 
     public LibroDto() {
+    }
+
+    public LibroDto(Integer idLibro, String nombreLibro, Double precioLibro, Short anioLibro, Editorial idEditorial, Autor idAutor) {
+        this.idLibro = idLibro;
+        this.nombreLibro = nombreLibro;
+        this.precioLibro = precioLibro;
+        this.anioLibro = anioLibro;
+        this.idEditorial = idEditorial;
+        this.idAutor = idAutor;
     }
 
     public Integer getIdLibro() {
@@ -44,21 +56,24 @@ public class LibroDto {
         this.anioLibro = anioLibro;
     }
 
-    public EditorialDto getIdEditorial() {
+    public Editorial getIdEditorial() {
         return idEditorial;
     }
 
-    public void setIdEditorial(EditorialDto idEditorial) {
+    public void setIdEditorial(Editorial idEditorial) {
         this.idEditorial = idEditorial;
     }
 
-    public AutorDto getIdAutor() {
+    public Autor getIdAutor() {
         return idAutor;
     }
 
-    public void setIdAutor(AutorDto idAutor) {
+    public void setIdAutor(Autor idAutor) {
         this.idAutor = idAutor;
     }
 
+    @Override
+    public String toString() {
+        return nombreLibro;
+    }
 }
-
