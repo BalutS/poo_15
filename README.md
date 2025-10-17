@@ -4,7 +4,7 @@ Las implementaciones de sintaxis, interfaz grafica, estructura de codigo y de cl
 Mantener un consitencia en el codigo, no utilizar sintaxis complicada que no se haya utilizado en "Guia" a menos que sea estrictamente necesario para el correcto funcionamiento del codigo
 NO UTILIZAR BufferdReader, u otros metodos o tipos de implementacios diferentes a la Guia, utilizar los metodos usados en "Guia".
 No borrar o editar codigo ya implementado, a menos que sea necesario, solo si el código impide compilar, es un error obvio que impida el correcto funcionamiento del programa. aunque fragmenos de codigo parezcan no tener una funcionalidad clara, se deben mantener.
-Los archivos de persistencia se deben guardar en una carpeta llamada "miBaseDeDatos".
+Los archivos de persistencia se deben guardar en una carpeta llamada "miBaseDeDatos" cada linea en los archivos "txt" corresponde a un registro, delimitando cada dato del registro con un ";".
 Abordar excepciones y validaciones de campos de la misma manera que en "Guia"
 
 REQUISITOS DEL PROGRAMA:
