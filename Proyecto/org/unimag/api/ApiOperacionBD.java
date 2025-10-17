@@ -19,4 +19,3 @@ public interface ApiOperacionBD<T, ID> {
     public T getOne(ID codigo);
 
 }
-
