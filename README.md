@@ -1,11 +1,13 @@
-En este repositorio hay dos carpetas, la carpeta "Guia" y la carpeta "Proyecto". en la carpeta "Proyecto" se encuentran las clases del proyecto a editar, en este proyecto se encuentran la mayoria de clases sobre las que se va a trabajar.
+En este repositorio hay dos carpetas, la carpeta "Guia" y la carpeta "Proyecto" ademas del archivo "NioFile.java". en la carpeta "Proyecto" se encuentran las clases del proyecto a editar, en este proyecto se encuentran la mayoria de clases sobre las que se va a trabajar.
 En la carpeta "Guia" se encuentran las clases de otro programa muy similar a "Proyecto". Este programa esta completo y debe servir como guia para las implementaciones en "Proyecto".
+Los metodos del arhivo "NioFile.java" ya esta incluido como una libreria en el proyecto. Unicamente se agrego para que puedas analizar sus metodos y hacer un correcto uso de ellos
 Las implementaciones de sintaxis, interfaz grafica, estructura de codigo y de clases en "Proyecto" se debe hacer de forma IDENTICA a la manera en la que esta hecho en "Guia" pero adaptado a el contexto de "Proyecto", respetando patrones de codigo, estructura de carpetas y clases, interfaz grafica, estilos, manejo de excepciones. no utilizar cosas que la "Guia" no use.
 Mantener un consitencia en el codigo, no utilizar sintaxis complicada que no se haya utilizado en "Guia" a menos que sea estrictamente necesario para el correcto funcionamiento del codigo
 NO UTILIZAR BufferdReader, u otros metodos o tipos de implementacios diferentes a la Guia, utilizar los metodos usados en "Guia".
 No borrar o editar codigo ya implementado, a menos que sea necesario, solo si el código impide compilar, es un error obvio que impida el correcto funcionamiento del programa. aunque fragmenos de codigo parezcan no tener una funcionalidad clara, se deben mantener.
 Los archivos de persistencia se deben guardar en una carpeta llamada "miBaseDeDatos" cada linea en los archivos "txt" corresponde a un registro, delimitando cada dato del registro con un ";".
 Abordar excepciones y validaciones de campos de la misma manera que en "Guia"
+
 
 REQUISITOS DEL PROGRAMA:
 Existen 3 clases principales dentro del programa: Editorial, Autor y Libro.
