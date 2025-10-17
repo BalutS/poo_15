@@ -7,6 +7,8 @@ NO UTILIZAR BufferdReader, u otros metodos o tipos de implementacios diferentes 
 No borrar o editar codigo ya implementado, a menos que sea necesario, solo si el código impide compilar, es un error obvio que impida el correcto funcionamiento del programa. aunque fragmenos de codigo parezcan no tener una funcionalidad clara, se deben mantener.
 Los archivos de persistencia se deben guardar en una carpeta llamada "miBaseDeDatos" cada linea en los archivos "txt" corresponde a un registro, delimitando cada dato del registro con un ";".
 Abordar excepciones y validaciones de campos de la misma manera que en "Guia"
+En las clases de "modelo" y "dto" se utilizan constructores vacios, se deben mantener de esa manera y no crear mas constructores.
+
 
 
 REQUISITOS DEL PROGRAMA:
